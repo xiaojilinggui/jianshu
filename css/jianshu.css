@@ -5,66 +5,34 @@
   box-sizing: border-box;
 }
 
-.upper-part{  /*导航栏总体框架设置*/
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-  height: 56px;
+.upper-part{
+  display: flex;
+  justify-content: space-around;
+  height: 58px;
   border-bottom: 1px solid #f0f0f0;
 }
-.page-header{
-  min-width: 768px;
-  max-width: 1440px;
-  margin: 0 auto;
-}
 
-.navlist{  /*设置右上角导航*/
-  float: right;
-  line-height: 25px;
-  margin:8px 15px 0;
-  padding: 6px;
-  font-size: 15px;
-}
-
-.logo img{  
-  float: left;
+.upper-logo img{
   height: 56px;
   width: 100px;
 }
 
-.header-search-leftsidebar li{  /*设置左上角导航*/
-  list-style-type: none;
-  float: left;
-  margin:5px 15px 0;
-  padding: 6px;
-  line-height: 33px;
-}
-
-.container{  /*设置搜索框等定位*/
- width: 960px;
- margin-left: auto;
- margin-right: auto;
- padding-left: 15px;
- padding-right: 15px;
-}
-
-.home a{
-  color: #ea6f5a;
-  font-size: 17px;
-}
-.download a{
-  color: #333;
-  font-size: 17px;
-}
-
-.container-leftsidebar{
+.upper-list{
+  display: flex;
+  align-items: center;
   position: relative;
+ 
+}
+.list-ul{  /*首页，下载等设置*/
+  display: flex;
+  list-style-type: none;
+  font-size:17px; 
 }
 
-.search input{   /*输入框*/
+.search input{    /*搜索框*/
   padding: 0 40px 0 20px;
   margin-top: 0;
+  color: #a0a0a0;
   width: 160px;
   height: 38px;
   font-size: 14px;
@@ -72,39 +40,77 @@
   border-radius: 40px;
   background: #eee;
   outline: none;
-  color: #a2a2a2;
-
 }
+
 .fa-search{
+  color: #9e999c;
   position: absolute;
-  color: #a2a2a2;
-  top: 23px;
-  left: 340px;
+  right: 35px;
+  top: 20px;
+}
+.fa-compass{
+  color: #ea6f5a;
+  margin-right: -15px;
+}
+.fa-arrow-alt-circle-down{
+  color: #9e999c;
+  margin-right: -15px;
 }
 
-.article{
-  margin: 8px 15px 0;
-  height: 40px;          /*设置右上角按钮样式*/
-  width:100px;
-  color: #fff;
-  text-align: center;
-  border-radius: 20px;
-  background-color: #ea6f5a;
+.item-ul a{
+  padding:15px;
+  line-height: 33px;
 }
-.register{
-  margin: 8px 15px 0;
-  height: 38px;
-  width:80px;           /*设置右上角按钮样式*/
+
+.home a{
   color: #ea6f5a;
-  text-align: center;
+}
+.download a{
+  color: #333;
+}
+
+.list-ul li{
+  margin-right: 10px;
+}
+
+.upper-btn{  /*右上角按钮设置*/
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+/*.upper-btn a{
+  padding:15px;
+}*/
+.btn-wz{
+  width: 100px;
   border-radius: 20px;
+  font-size: 17px;
+  color: #fff;
+  background-color: #ea6f5a;
+  text-align: center;
+  padding: 10px;
+  margin-left: 20px
+}
+.btn-zc{
+  width: 80px;
+  height: 38px;
+  border-radius: 20px;
+  font-size: 17px;
+  color:#ea6f5a ;
+  text-align: center;
+  line-height: 33px;
   border:1px solid #ea6f5a;
+  margin-left: 20px
 }
-.login{
-  color: #969696;
+.btn-dl{
+  color:#969696;
+  margin-left: 20px;
+  margin-right: 10px;
 }
-.font{
+.btn-zt{
   color: #969696;
-  font-weight: 400;
-  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 10px;
+  font-weight: 700;
+  font-size: 19px;
 }
