@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.upper-part{  /*导航栏总体框架设置*/
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  height: 56px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.page-header{
+  min-width: 768px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.navlist{  /*设置右上角导航*/
+  float: right;
+  line-height: 25px;
+  margin:8px 15px 0;
+  padding: 6px;
+  font-size: 15px;
+}
+
+.logo img{  
+  float: left;
+  height: 56px;
+  width: 100px;
+}
+
+.header-search-leftsidebar li{  /*设置左上角导航*/
+  list-style-type: none;
+  float: left;
+  margin:5px 15px 0;
+  padding: 6px;
+  line-height: 33px;
+}
+
+.container{  /*设置搜索框等定位*/
+ width: 960px;
+ margin-left: auto;
+ margin-right: auto;
+ padding-left: 15px;
+ padding-right: 15px;
+}
+
+.home a{
+  color: #ea6f5a;
+  font-size: 17px;
+}
+.download a{
+  color: #333;
+  font-size: 17px;
+}
+
+.container-leftsidebar{
+  position: relative;
+}
+
+.search input{   /*输入框*/
+  padding: 0 40px 0 20px;
+  margin-top: 0;
+  width: 160px;
+  height: 38px;
+  font-size: 14px;
+  border: 1px solid #eee;
+  border-radius: 40px;
+  background: #eee;
+  outline: none;
+  color: #a2a2a2;
+
+}
+.fa-search{
+  position: absolute;
+  color: #a2a2a2;
+  top: 23px;
+  left: 340px;
+}
+
+.article{
+  margin: 8px 15px 0;
+  height: 40px;          /*设置右上角按钮样式*/
+  width:100px;
+  color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #ea6f5a;
+}
+.register{
+  margin: 8px 15px 0;
+  height: 38px;
+  width:80px;           /*设置右上角按钮样式*/
+  color: #ea6f5a;
+  text-align: center;
+  border-radius: 20px;
+  border:1px solid #ea6f5a;
+}
+.login{
+  color: #969696;
+}
+.font{
+  color: #969696;
+  font-weight: 400;
+  font-size: 20px;
+}
