@@ -6,6 +6,13 @@
 }
 
 .upper-part{
+  right: 0;
+  left: 0;
+  background-color: #fff; 
+  position: fixed;
+}
+
+.upper-container{
   display: flex;
   justify-content: space-around;
   height: 58px;
@@ -21,10 +28,12 @@
   display: flex;
   align-items: center;
   position: relative;
+  right: 140px;
  
 }
 .list-ul{  /*首页，下载等设置*/
   display: flex;
+  justify-content: flex-start;
   list-style-type: none;
   font-size:17px; 
 }
@@ -59,7 +68,7 @@
 
 .item-ul a{
   padding:15px;
-  line-height: 33px;
+  line-height: 58px;
 }
 
 .home a{
@@ -75,7 +84,6 @@
 
 .upper-btn{  /*右上角按钮设置*/
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
 }
 /*.upper-btn a{
@@ -113,4 +121,92 @@
   margin-right: 10px;
   font-weight: 700;
   font-size: 19px;
+}
+
+/*___________内容部分____________*/
+.middle-part{
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+.middle-left-item{
+  width:600px;
+  margin-right: 20px;
+}
+
+.left-item-banner img{
+  height: 300px;
+  width: 600px;
+  border-radius: 20px;
+}
+
+.left-item-btn{
+  padding-top: 30px;
+  border-bottom: 1px solid #a0a0a047;
+}
+
+.collection img{
+ width: 32px;
+ height: 32px;
+ vertical-align: middle;
+}
+.collection {
+  display: inline-block;
+  height: 33px;
+  margin:0 18px 18px 0;
+  background-color: #f7f7f7;
+  border:1px solid #dcdcdc;
+  vertical-align: top;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.collection-name{
+  display: inline-block;
+  font-size: 14px;
+  padding: 0 11px 0 6px;
+  vertical-align: middle;
+  color: #000;
+}
+.collection-hot{
+  color: #a0a0a0;
+  font-size: 13px;
+  vertical-align: middle;
+}
+.btn-container{
+  margin-bottom: 20px;
+}
+
+.middle-right-item{
+  background-color: #a0a0a047;
+  width: 280px;
+  min-height: 280px;
+  margin-left: 20px;
+}
+/*_________设置摘要__________*/
+.summary{
+  padding-top: 20px;
+  height: 140px;
+  border-bottom: 1px solid #a0a0a047;
+}
+.text-item{
+  float: left;
+  height: 107px;
+  width: 460px;
+
+}
+.img-item{
+  float: right;
+
+}
+.img-item img{
+  height: 100px;
+  width: 125px;
+}
+.text-item h2{
+  font-size: 18px;
+}
+.text-item p{
+  font-size: 14px;
+  margin-top: 10px;
+  color: #999;
 }
