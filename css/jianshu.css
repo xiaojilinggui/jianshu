@@ -230,10 +230,12 @@
   margin-left: 20px;
 }
 
+.subnav{
+  display: inline-block;
+  margin-bottom: 10px;
+}
 .subnav img{
   width: 100%;
-  margin-bottom: 6px;
-  border-radius: 5px;
 }
 
 .right-item-qrcode{
@@ -278,20 +280,19 @@
   color: #969696;
 }
 .content{
+  display: flex;
+  align-items: flex-start;
   margin-top: 20px;
   width: 100%;
   height: 47px;
 }
 .content img{
-  float: left;
   height: 48px;
   width: 48px;
   border-radius: 50%;
 }
 .content-name{
   display: inline-block;
-  float: left;
-  margin-top: 5px;
   padding-left: 20px;
 }
 .content-name p{
@@ -300,7 +301,7 @@
   padding-top: 5px;
 }
 .follow{
-  float: right;
+  padding-left: 20px;
   font-size: 15px;
   color: #42c02e;
 
@@ -315,8 +316,6 @@
 }
 
 .bottom-container{    /*定位底部信息位置对齐*/
-  display: flex;
-  flex-direction: column;
   margin-left:-380px;
 }
 .bottom-list a{
