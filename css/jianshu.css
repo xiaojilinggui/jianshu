@@ -59,11 +59,9 @@
 }
 .fa-compass{
   color: #ea6f5a;
-  margin-right: -15px;
 }
 .fa-arrow-alt-circle-down{
   color: #9e999c;
-  margin-right: -15px;
 }
 
 .item-ul a{
@@ -185,20 +183,21 @@
 }
 
 .text-item{
-  float: left;
+  display: inline-block;
   height: 107px;
   width: 460px;
 
 }
 .img-item{
-  float: right;
+  display: inline-block;
 }
 .img-item img{
   height: 100px;
   width: 125px;
 }
-.text-item h2{
+.title{
   font-size: 18px;
+  font-weight: 700;
   color: #000;
 }
 .text-item p{
